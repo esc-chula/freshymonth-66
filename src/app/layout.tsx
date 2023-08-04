@@ -1,10 +1,24 @@
 import LiffProvider from '@/contexts/LiffContext';
 import './globals.css';
-import { IBM_Plex_Sans_Thai } from 'next/font/google';
+import { Fahkwang } from 'next/font/google';
+import localFont from 'next/font/local';
 
-const ibmPlexSansThai = IBM_Plex_Sans_Thai({
+const sovPoster = localFont({
+    src: [
+        {
+            path: '../../public/fonts/SOV_poster.ttf',
+            weight: '400',
+        },
+        {
+            path: '../../public/fonts/SOV_poster-Bold.ttf',
+            weight: '700',
+        },
+    ],
+});
+
+const fahkwang = Fahkwang({
     subsets: ['thai'],
-    weight: ['100', '200', '300', '400', '500', '600', '700'],
+    weight: ['200', '300', '400', '500', '600', '700'],
 });
 
 export const metadata = {
@@ -20,10 +34,14 @@ export default function RootLayout({
     return (
         <html lang="th">
             <body
-                className={`${ibmPlexSansThai.className} flex justify-center`}
+                className={`${sovPoster.className} ${fahkwang.className} flex justify-center`}
             >
                 <LiffProvider>
-                    <div className="max-w-screen-sm w-full p-4">{children}</div>
+                    <div className="absolute top-0 bottom-0 max-w-screen-sm w-full text-[#55160F]">
+                        <div className="w-full h-full overflow-y-auto">
+                            {children}
+                        </div>
+                    </div>
                 </LiffProvider>
             </body>
         </html>
