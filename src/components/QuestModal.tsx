@@ -1,7 +1,6 @@
 import { IQuest } from '@/interfaces/quest';
-import BackgroundImage from '@/public/images/background_light.png';
-import CloseBackgroundImage from '@/public/images/paper_2.png';
-import { sovPoster } from '@/utils/fonts';
+import BackgroundImage from '@/public/images/quest_detail_background.png';
+import { tiger } from '@/utils/fonts';
 import Image from 'next/image';
 import { FiX } from 'react-icons/fi';
 
@@ -20,29 +19,33 @@ export default function QuestModal({
                 selectedQuest ? 'opacity-100' : 'opacity-0 pointer-events-none'
             }`}
         >
-            <div
-                onClick={() => setSelectedQuest(null)}
-                className="z-20 absolute top-4 left-5 p-2 text-3xl cursor-pointer"
-            >
-                X
-            </div>
-            <div className="z-20 pt-14">
-                <h2
-                    className={`font-bold text-center text-7xl tracking-wide ${sovPoster.className}`}
+            <div className="pt-20">
+                <h1
+                    className={`text-center text-5xl font-bold text-white ${tiger.className}`}
+                    style={{
+                        WebkitTextStroke: '8px #000',
+                        paintOrder: 'stroke fill',
+                    }}
                 >
                     {selectedQuest?.title}
-                </h2>
+                </h1>
             </div>
-            <Image
-                src={CloseBackgroundImage}
-                alt=""
-                className="z-10 absolute -top-10 -left-6 w-28 rotate-45"
-            />
+
+            {/* close button */}
+            <div
+                onClick={() => setSelectedQuest(null)}
+                className="absolute top-7 left-7 p-2 text-3xl text-black"
+            >
+                <FiX />
+            </div>
+
+            {/* background */}
+            <div className="-z-10 absolute top-4 bottom-4 left-4 right-4 bg-[#f0e3d5]/70 rounded-2xl"></div>
             <Image
                 src={BackgroundImage}
                 alt="Background Image"
                 fill
-                className="select-none -z-10 object-cover"
+                className="select-none -z-20 object-cover"
             />
         </div>
     );
