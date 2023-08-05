@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import QuestCard from '@/components/QuestCard';
 import QuestModal from '@/components/QuestModal';
+import QuestText from '@/vectors/QuestText';
 
 export default function Quest() {
     const quests = [
@@ -48,15 +49,7 @@ export default function Quest() {
                 setSelectedQuest={setSelectedQuest}
             />
 
-            <h1
-                className={`text-6xl text-white text-center py-4 mt-6 -mb-2 ${badaboom.className}`}
-                style={{
-                    WebkitTextStroke: '8px #000',
-                    paintOrder: 'stroke fill',
-                }}
-            >
-                Quests
-            </h1>
+            <QuestText className="mx-auto py-4 mt-10 -mb-4" />
 
             <div className="grid grid-cols-2 p-5 gap-5">
                 {quests.map((quest, idx) => {
