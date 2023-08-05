@@ -1,7 +1,7 @@
 import { IQuest } from '@/interfaces/quest';
 import BackgroundImage from '@/public/images/background_light.png';
 import CloseBackgroundImage from '@/public/images/paper_2.png';
-import { sovPoster } from '@/utils/fonts';
+import { fahkwang, sovPoster } from '@/utils/fonts';
 import Image from 'next/image';
 
 interface QuestModalProps {
@@ -16,6 +16,8 @@ export default function QuestModalOld({
     return (
         <div
             className={`z-20 fixed top-0 bottom-0 left-0 right-0 duration-200 ease-in-out ${
+                fahkwang.className
+            } ${
                 selectedQuest ? 'opacity-100' : 'opacity-0 pointer-events-none'
             }`}
         >

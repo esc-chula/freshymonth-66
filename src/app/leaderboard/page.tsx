@@ -2,12 +2,16 @@ import BackgroundImage from '@/public/images/leaderboard_background.png';
 import GroupScoreData from '@/constants/group-score.json';
 import { badaboom, ibmPlexSansThai, tiger } from '@/utils/fonts';
 import Image from 'next/image';
+import LeaderBoardText from '@/vectors/LeaderBoardText';
 
 export default function Leaderboard() {
     return (
         <>
             <div className="flex flex-col w-full p-8 space-y-4 mb-4">
-                <h1
+                <div className="flex justify-center">
+                    <LeaderBoardText className="scale-90" />
+                </div>
+                {/* <h1
                     className={`text-6xl text-white text-center py-4 ${badaboom.className}`}
                     style={{
                         WebkitTextStroke: '8px #000',
@@ -15,7 +19,7 @@ export default function Leaderboard() {
                     }}
                 >
                     Leaderboard
-                </h1>
+                </h1> */}
                 {GroupScoreData.sort((a, b) => b.score - a.score).map(
                     (item, idx) => (
                         <div
@@ -41,8 +45,8 @@ export default function Leaderboard() {
                 )}
             </div>
 
-            <div className="fixed top-0 bottom-0 left-0 right-0 border-black border-[19px] pointer-events-none"></div>
-            <div className="fixed top-0 bottom-0 left-0 right-0 border-white border-[15px] pointer-events-none z-10"></div>
+            {/* <div className="fixed top-0 bottom-0 left-0 right-0 border-black border-[19px] pointer-events-none"></div>
+            <div className="fixed top-0 bottom-0 left-0 right-0 border-white border-[15px] pointer-events-none z-10"></div> */}
             <Image
                 src={BackgroundImage}
                 alt="Background Image"

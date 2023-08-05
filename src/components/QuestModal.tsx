@@ -3,6 +3,7 @@ import BackgroundImage from '@/public/images/quest_detail_background.png';
 import { tiger } from '@/utils/fonts';
 import Image from 'next/image';
 import { FiX } from 'react-icons/fi';
+import QuestDetail from './QuestDetail';
 
 interface QuestModalProps {
     selectedQuest: IQuest | null;
@@ -19,28 +20,43 @@ export default function QuestModal({
                 selectedQuest ? 'opacity-100' : 'opacity-0 pointer-events-none'
             }`}
         >
-            <div className="pt-20">
-                <h1
-                    className={`text-center text-5xl font-bold text-white ${tiger.className}`}
-                    style={{
-                        WebkitTextStroke: '8px #000',
-                        paintOrder: 'stroke fill',
-                    }}
-                >
-                    {selectedQuest?.title}
-                </h1>
+            <div className="w-full h-full overflow-y-auto px-4 space-y-6 text-black">
+                <div className="pt-14">
+                    <h1
+                        className={`text-center text-5xl font-bold text-white ${tiger.className}`}
+                        style={{
+                            WebkitTextStroke: '4px #000',
+                            paintOrder: 'stroke fill',
+                        }}
+                    >
+                        {selectedQuest?.title}
+                    </h1>
+                </div>
+                <QuestDetail title="วิธีเล่น">
+                    <p>
+                        สัตว์หนึ่งขา สัตว์สองขา สัตว์สามขา สัตว์สี่ขา สัตว์ห้าขา
+                        สัตว์หกขา
+                    </p>
+                </QuestDetail>
+                <QuestDetail title="สถานที่">
+                    <p>สัตว์หนึ่งขา</p>
+                </QuestDetail>
+                <QuestDetail title="เกณฑ์การให้คะแนน">
+                    <p>สัตว์สองขา</p>
+                </QuestDetail>
+                <QuestDetail title="ระยะเวลา">
+                    <p>สัตว์ร้อยขา</p>
+                </QuestDetail>
             </div>
 
             {/* close button */}
             <div
                 onClick={() => setSelectedQuest(null)}
-                className="absolute top-7 left-7 p-2 text-3xl text-black"
+                className="absolute top-5 left-5 p-2 text-3xl text-black"
             >
                 <FiX />
             </div>
 
-            {/* background */}
-            <div className="-z-10 absolute top-4 bottom-4 left-4 right-4 bg-[#f0e3d5]/70 rounded-2xl"></div>
             <Image
                 src={BackgroundImage}
                 alt="Background Image"

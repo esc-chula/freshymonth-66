@@ -49,9 +49,11 @@ export default function Quest() {
                 setSelectedQuest={setSelectedQuest}
             />
 
-            <QuestText className="mx-auto py-4 mt-10 -mb-4" />
+            <div className="flex justify-center -mb-6 mt-3">
+                <QuestText className="scale-[55%]" />
+            </div>
 
-            <div className="grid grid-cols-2 p-9 gap-5">
+            <div className="grid grid-cols-2 p-5 gap-5">
                 {quests.map((quest, idx) => {
                     return (
                         <QuestCard
@@ -64,8 +66,8 @@ export default function Quest() {
                 })}
             </div>
 
-            <div className="fixed top-0 bottom-0 left-0 right-0 border-black border-[19px] pointer-events-none"></div>
-            <div className="fixed top-0 bottom-0 left-0 right-0 border-white border-[15px] pointer-events-none z-10"></div>
+            {/* <div className="fixed top-0 bottom-0 left-0 right-0 border-black border-[19px] pointer-events-none"></div>
+            <div className="fixed top-0 bottom-0 left-0 right-0 border-white border-[15px] pointer-events-none z-10"></div> */}
             <Image
                 src={BackgroundImage}
                 alt="Background Image"
