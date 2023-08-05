@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Leaderboard() {
     return (
         <>
-            <div className="flex flex-col w-full p-8 space-y-4 mb-4">
+            <div className="flex flex-col w-full p-5 space-y-4 mb-4">
                 <h1
                     className={`text-6xl text-white text-center py-4 ${badaboom.className}`}
                     style={{
@@ -41,8 +41,8 @@ export default function Leaderboard() {
                 )}
             </div>
 
-            <div className="fixed top-0 bottom-0 left-0 right-0 border-black border-[19px] pointer-events-none"></div>
-            <div className="fixed top-0 bottom-0 left-0 right-0 border-white border-[15px] pointer-events-none z-10"></div>
+            {/* <div className="fixed top-0 bottom-0 left-0 right-0 border-black border-[19px] pointer-events-none"></div>
+            <div className="fixed top-0 bottom-0 left-0 right-0 border-white border-[15px] pointer-events-none z-10"></div> */}
             <Image
                 src={BackgroundImage}
                 alt="Background Image"

@@ -35,19 +35,19 @@ export default function LiffProvider({
             });
     }, []);
 
-    if (liffError) {
-        return (
-            <div className="grid place-content-center h-screen w-full text-center bg-white">
-                <p className="text-4xl font-bold text-neutral-900">
-                    เอ้อะ?! อย่าบอกนะ..
-                </p>
-                <p className="text-xs text-neutral-500">
-                    ถ้าเจอหน้านี้ไปหาและบอกไอคนที่ชื่อว่าปูนว่าเว็บล่มด้วยนะ
-                </p>
-                <p className="text-xs text-neutral-500">{liffError}</p>
-            </div>
-        );
-    }
+    // if (liffError) {
+    //     return (
+    //         <div className="grid place-content-center h-screen w-full text-center bg-white">
+    //             <p className="text-4xl font-bold text-neutral-900">
+    //                 เอ้อะ?! อย่าบอกนะ..
+    //             </p>
+    //             <p className="text-xs text-neutral-500">
+    //                 ถ้าเจอหน้านี้ไปหาและบอกไอคนที่ชื่อว่าปูนว่าเว็บล่มด้วยนะ
+    //             </p>
+    //             <p className="text-xs text-neutral-500">{liffError}</p>
+    //         </div>
+    //     );
+    // }
 
     return (
         <LiffContext.Provider

@@ -49,7 +49,7 @@ export default function Quest() {
             />
 
             <h1
-                className={`text-6xl text-white text-center py-4 mt-10 -mb-4 ${badaboom.className}`}
+                className={`text-6xl text-white text-center py-4 mt-6 -mb-2 ${badaboom.className}`}
                 style={{
                     WebkitTextStroke: '8px #000',
                     paintOrder: 'stroke fill',
@@ -58,7 +58,7 @@ export default function Quest() {
                 Quests
             </h1>
 
-            <div className="grid grid-cols-2 p-9 gap-5">
+            <div className="grid grid-cols-2 p-5 gap-5">
                 {quests.map((quest, idx) => {
                     return (
                         <QuestCard
@@ -71,8 +71,8 @@ export default function Quest() {
                 })}
             </div>
 
-            <div className="fixed top-0 bottom-0 left-0 right-0 border-black border-[19px] pointer-events-none"></div>
-            <div className="fixed top-0 bottom-0 left-0 right-0 border-white border-[15px] pointer-events-none z-10"></div>
+            {/* <div className="fixed top-0 bottom-0 left-0 right-0 border-black border-[19px] pointer-events-none"></div>
+            <div className="fixed top-0 bottom-0 left-0 right-0 border-white border-[15px] pointer-events-none z-10"></div> */}
             <Image
                 src={BackgroundImage}
                 alt="Background Image"
