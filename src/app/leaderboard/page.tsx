@@ -7,7 +7,7 @@ import LeaderBoardText from '@/vectors/LeaderBoardText';
 export default function Leaderboard() {
     return (
         <>
-            <div className="flex flex-col w-full p-8 space-y-4 mb-4">
+            <div className="flex flex-col w-full p-6 space-y-4 mb-4">
                 <div className="flex justify-center">
                     <LeaderBoardText className="scale-90" />
                 </div>
@@ -30,7 +30,7 @@ export default function Leaderboard() {
                                 className={`font-bold text-4xl text-white w-7 text-center ${badaboom.className}`}
                                 style={{
                                     WebkitTextStroke: '8px #000',
-                                    paintOrder: 'stroke fill',
+                                    paintOrder: 'stroke',
                                 }}
                             >
                                 {idx + 1}

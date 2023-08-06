@@ -1,7 +1,7 @@
 'use client';
 import { IQuest } from '@/interfaces/quest';
 import BackgroundImage from '@/public/images/quest_background.svg';
-import { badaboom, sovPoster } from '@/utils/fonts';
+import QuestsData from '@/constants/quests.json';
 import Image from 'next/image';
 import { useState } from 'react';
 import QuestCard from '@/components/QuestCard';
@@ -9,36 +9,7 @@ import QuestModal from '@/components/QuestModal';
 import QuestText from '@/vectors/QuestText';
 
 export default function Quest() {
-    const quests = [
-        {
-            title: 'สัตว์สี่ขา',
-            slug: 'test',
-        },
-        {
-            title: 'สัตว์สามขา',
-            slug: 'test',
-        },
-        {
-            title: 'สัตว์สองขา',
-            slug: 'test',
-        },
-        {
-            title: 'สัตว์สี่ขา',
-            slug: 'test',
-        },
-        {
-            title: 'สัตว์สี่ขา',
-            slug: 'test',
-        },
-        {
-            title: 'สัตว์สี่ขา',
-            slug: 'test',
-        },
-        {
-            title: 'สัตว์สี่ขา',
-            slug: 'test',
-        },
-    ];
+    const quests = QuestsData as IQuest[];
 
     const [selectedQuest, setSelectedQuest] = useState<IQuest | null>(null);
 

@@ -25,8 +25,8 @@ export default function QuestModal({
                     <h1
                         className={`text-center text-5xl font-bold text-white ${tiger.className}`}
                         style={{
-                            WebkitTextStroke: '4px #000',
-                            paintOrder: 'stroke fill',
+                            WebkitTextStroke: '8px #000',
+                            paintOrder: 'stroke',
                         }}
                     >
                         {selectedQuest?.title}
