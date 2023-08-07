@@ -21,9 +21,18 @@ export default function QuestModal({
             }`}
         >
             <div className="w-full h-full overflow-y-auto px-4 space-y-6 text-black">
-                <div className="pt-14">
+                <div className="pt-14 h-28 flex justify-center">
                     <h1
-                        className={`text-center text-5xl font-bold text-white ${tiger.className}`}
+                        className={`absolute z-10 text-center text-5xl font-bold text-white ${tiger.className}`}
+                        style={{
+                            WebkitTextStroke: '8px #000',
+                            paintOrder: 'stroke',
+                        }}
+                    >
+                        {selectedQuest?.title}
+                    </h1>
+                    <h1
+                        className={`absolute z-0 text-center text-5xl font-bold text-white ${tiger.className}`}
                         style={{
                             WebkitTextStroke: '8px #000',
                             paintOrder: 'stroke',

@@ -24,22 +24,36 @@ export default function Leaderboard() {
                     (item, idx) => (
                         <div
                             key={idx}
-                            className={`h-20 w-full bg-white border-4 border-black flex items-center px-5 space-x-5`}
+                            className={`h-20 w-full bg-white border-4 border-black flex justify-between items-center px-5`}
                         >
-                            <h3
-                                className={`font-bold text-4xl text-white w-7 text-center ${badaboom.className}`}
-                                style={{
-                                    WebkitTextStroke: '8px #000',
-                                    paintOrder: 'stroke',
-                                }}
-                            >
-                                {idx + 1}
-                            </h3>
-                            <p
-                                className={`text-black text-3xl font-semibold ${tiger.className}`}
-                            >
-                                กรุ้ป {item.name}
-                            </p>
+                            <div className="relative flex items-center">
+                                <h3
+                                    className={`absolute left-0 z-10 font-bold text-4xl text-white w-7 text-center ${badaboom.className}`}
+                                >
+                                    {idx + 1}
+                                </h3>
+                                <h3
+                                    className={`absolute left-0 z-0 font-bold text-4xl text-white w-7 text-center ${badaboom.className}`}
+                                    style={{
+                                        WebkitTextStroke: '8px #000',
+                                        // paintOrder: 'stroke',
+                                    }}
+                                >
+                                    {idx + 1}
+                                </h3>
+                                <p
+                                    className={`text-black text-3xl font-semibold ml-12 ${tiger.className}`}
+                                >
+                                    กรุ้ป {item.name}
+                                </p>
+                            </div>
+                            <div>
+                                <p
+                                    className={`text-black text-3xl font-semibold ${tiger.className}`}
+                                >
+                                    {item.score}
+                                </p>
+                            </div>
                         </div>
                     )
                 )}

@@ -19,7 +19,7 @@ export default function QuestCard({
                     slug: slug,
                 });
             }}
-            className="aspect-square w-full bg-white border-black border-[5px] rounded-2xl"
+            className="aspect-square w-full bg-white border-black border-[5px] rounded-3xl"
         ></div>
     );
 }
