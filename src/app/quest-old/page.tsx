@@ -4,41 +4,13 @@ import QuestModalOld from '@/components/QuestModalOld';
 import { IQuest } from '@/interfaces/quest';
 import BackgroundImage from '@/public/images/background_dark.png';
 import QuestTitleBackground from '@/public/images/paper_1.png';
+import QuestsData from '@/constants/quests.json';
 import { fahkwang, sovPoster } from '@/utils/fonts';
 import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Quest() {
-    const quests = [
-        {
-            title: 'สัตว์สี่ขา',
-            slug: 'test',
-        },
-        {
-            title: 'สัตว์สามขา',
-            slug: 'test',
-        },
-        {
-            title: 'สัตว์สองขา',
-            slug: 'test',
-        },
-        {
-            title: 'สัตว์สี่ขา',
-            slug: 'test',
-        },
-        {
-            title: 'สัตว์สี่ขา',
-            slug: 'test',
-        },
-        {
-            title: 'สัตว์สี่ขา',
-            slug: 'test',
-        },
-        {
-            title: 'สัตว์สี่ขา',
-            slug: 'test',
-        },
-    ];
+    const quests = QuestsData as IQuest[];
 
     const [selectedQuest, setSelectedQuest] = useState<IQuest | null>(null);
 
@@ -72,9 +44,8 @@ export default function Quest() {
                     return (
                         <QuestCardOld
                             key={idx}
+                            quest={quest}
                             setSelectedQuest={setSelectedQuest}
-                            title={quest.title}
-                            slug={quest.slug}
                         />
                     );
                 })}
