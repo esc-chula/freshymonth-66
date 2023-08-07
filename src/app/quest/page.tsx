@@ -29,9 +29,8 @@ export default function Quest() {
                     return (
                         <QuestCard
                             key={idx}
+                            quest={quest}
                             setSelectedQuest={setSelectedQuest}
-                            title={quest.title}
-                            slug={quest.slug}
                         />
                     );
                 })}
