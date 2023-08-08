@@ -1,44 +1,11 @@
 [
     {
-        "title": "สัตว์สี่ขา",
+        "title": "True Lab",
         "slug": "test",
         "active": true,
-        "image": "quest_1.png"
-    },
-    {
-        "title": "สัตว์สามขา",
-        "slug": "test",
-        "active": false,
-        "image": "quest_1.png"
-    },
-    {
-        "title": "สัตว์สองขา",
-        "slug": "test",
-        "active": false,
-        "image": "quest_1.png"
-    },
-    {
-        "title": "สัตว์สี่ขา",
-        "slug": "test",
-        "active": false,
-        "image": "quest_1.png"
-    },
-    {
-        "title": "สัตว์สี่ขา",
-        "slug": "test",
-        "active": false,
-        "image": "quest_1.png"
-    },
-    {
-        "title": "สัตว์สี่ขา",
-        "slug": "test",
-        "active": false,
-        "image": "quest_1.png"
-    },
-    {
-        "title": "สัตว์สี่ขา",
-        "slug": "test",
-        "active": false,
-        "image": "quest_1.png"
+        "image": "quest_1.png",
+        "description": "ให้ CU107 ชวนเพื่อนในกรุ๊ป มาถ่ายรูปขณะอ่านหนังสือด้วยกันที่ห้อง True Lab<br />และแทค IG : @intania.freshymonth2023",
+        "scoring": "รวบรวมเพื่อนได้<br />1-5 คน 10 คะแนน<br />5-10 คน 20 คะแนน<br />10-15 คน 25 คะแนน<br />15-20 คน 30 คะแนน",
+        "duration": "Check-in ได้ตั้งแต่วันที่ 8-11 ส.ค. "
     }
 ]

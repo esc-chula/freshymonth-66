@@ -38,19 +38,35 @@ export default function QuestModal({
                     </h1>
                 </div>
                 <QuestDetail title="วิธีเล่น">
-                    <p>
-                        สัตว์หนึ่งขา สัตว์สองขา สัตว์สามขา สัตว์สี่ขา สัตว์ห้าขา
-                        สัตว์หกขา
-                    </p>
+                    <p
+                        dangerouslySetInnerHTML={{
+                            __html: selectedQuest?.description!,
+                        }}
+                    ></p>
                 </QuestDetail>
-                <QuestDetail title="สถานที่">
-                    <p>สัตว์หนึ่งขา</p>
-                </QuestDetail>
+                {selectedQuest?.place && (
+                    <QuestDetail title="สถานที่">
+                        <p
+                            dangerouslySetInnerHTML={{
+                                __html: selectedQuest?.place!,
+                            }}
+                        ></p>
+                    </QuestDetail>
+                )}
+
                 <QuestDetail title="เกณฑ์การให้คะแนน">
-                    <p>สัตว์สองขา</p>
+                    <p
+                        dangerouslySetInnerHTML={{
+                            __html: selectedQuest?.scoring!,
+                        }}
+                    ></p>
                 </QuestDetail>
                 <QuestDetail title="ระยะเวลา">
-                    <p>สัตว์ร้อยขา</p>
+                    <p
+                        dangerouslySetInnerHTML={{
+                            __html: selectedQuest?.duration!,
+                        }}
+                    ></p>
                 </QuestDetail>
             </div>
 
