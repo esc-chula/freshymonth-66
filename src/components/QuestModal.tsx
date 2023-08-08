@@ -20,7 +20,7 @@ export default function QuestModal({
                 selectedQuest ? 'opacity-100' : 'opacity-0 pointer-events-none'
             }`}
         >
-            <div className="w-full h-full overflow-y-auto px-4 space-y-6 text-black">
+            <div className="w-full h-full overflow-y-auto px-4 space-y-6 text-black pb-10">
                 <div className="pt-14 h-28 flex justify-center">
                     <h1
                         className={`absolute z-10 text-center text-5xl font-bold text-white ${tiger.className}`}
