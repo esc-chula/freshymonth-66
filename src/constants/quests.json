@@ -1,5 +1,14 @@
 [
     {
+        "title": "ดาว Tiktok",
+        "slug": "tiktok",
+        "active": true,
+        "image": "quest_3.png",
+        "description": "ให้แต่ละกรุ๊ปรวบรวมเพื่อนในกรุ๊ปให้ได้เยอะที่สุดมาเต้น Tiktok ด้วยกัน โดยจะเป็นเพลงอะไรก็ได้ โพสลง Reels ในไอจีกรุ๊ปตัวเอง แอด Reels ลงสตอรี่ แล้ว tag ig: intania.freshymonth2023",
+        "scoring": "ดูตามจำนวนเพื่อนในคลิป<br /><br />น้อยกว่า 5 คน = 10 คะแนน<br />5-10 คน = 20 คะแนน<br />10-15 คน = 25 คะแนน<br />15-20 คน = 30 คะแนน",
+        "duration": "9-11 ส.ค."
+    },
+    {
         "title": "Interview",
         "slug": "interview",
         "active": true,
