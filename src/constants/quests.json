@@ -1,5 +1,14 @@
 [
     {
+        "title": "ห้อง MI",
+        "slug": "mi-room",
+        "active": true,
+        "image": "quest_6.png",
+        "description": "ให้ CU107 ชวนเพื่อนในกรุ๊ป มาถ่ายรูปหน้าห้อง MI (ตึก 100 ปี ชั้น M)<br />และแทค IG : @intania.freshymonth2023",
+        "scoring": "รวบรวมเพื่อนได้<br />1-5 คน 10 คะแนน<br />5-10 คน 20 คะแนน<br />10-15 คน 25 คะแนน<br />15-20 คน 30 คะแนน",
+        "duration": "Check-in ได้ตั้งแต่วันที่ 15-18 ส.ค."
+    },
+    {
         "title": "ท้าชน",
         "slug": "crash",
         "active": true,
