@@ -2,7 +2,7 @@
     {
         "title": "Happy Meal",
         "slug": "happy-meal",
-        "active": true,
+        "active": false,
         "image": "quest_9.png",
         "description": "ให้ชวนเพื่อนๆและพี่ๆในกรุ๊ปไปทานข้าวหนึ่งมื้อด้วยกัน จากนั้นถ่ายรูปลงไอจีกรุ๊ป  และแท็กไอจีนิสิตสัมพันธ์",
         "scoring": "+1 คะแนน ต่อคน",
