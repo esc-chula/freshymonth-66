@@ -1,15 +1,15 @@
 [
     {
         "name": "A",
-        "score": 250
+        "score": 441
     },
     {
         "name": "B",
-        "score": 177
+        "score": 243
     },
     {
         "name": "C",
-        "score": 250
+        "score": 386.5
     },
     {
         "name": "Dog",
@@ -17,58 +17,58 @@
     },
     {
         "name": "E",
-        "score": 355
+        "score": 419
     },
     {
         "name": "F",
-        "score": 318.3
+        "score": 393
     },
     {
         "name": "G",
-        "score": 245
+        "score": 383.4
     },
     {
         "name": "H",
-        "score": 255
+        "score": 449.7
     },
     {
         "name": "J",
-        "score": 205
+        "score": 337
     },
     {
         "name": "K",
-        "score": 250
+        "score": 437
     },
     {
         "name": "L",
-        "score": 255
+        "score": 411
     },
     {
         "name": "M",
-        "score": 287.1
+        "score": 376
     },
     {
         "name": "N",
-        "score": 230
+        "score": 408.5
     },
     {
         "name": "P",
-        "score": 255
+        "score": 395
     },
     {
         "name": "Q",
-        "score": 255
+        "score": 436
     },
     {
         "name": "R",
-        "score": 255
+        "score": 407
     },
     {
         "name": "S",
-        "score": 170
+        "score": 279
     },
     {
         "name": "T",
-        "score": 357.9
+        "score": 431
     }
 ]
